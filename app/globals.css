@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: 23 19 15;
+  --paper: 250 248 246;
+  --surface: 255 255 255;
+  --surface-raised: 255 255 255;
+  --border: 232 226 218;
+  --muted: 117 111 104;
+  --accent: 224 18 63;
+  --accent-deep: 171 13 49;
+  --accent-soft: 251 228 234;
+}
+
+.dark {
+  --ink: 244 239 233;
+  --paper: 19 17 19;
+  --surface: 28 26 27;
+  --surface-raised: 34 32 33;
+  --border: 50 47 47;
+  --muted: 168 159 151;
+  --accent: 255 74 109;
+  --accent-deep: 255 117 144;
+  --accent-soft: 255 74 109;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+::selection {
+  background: rgb(var(--accent-soft) / 0.6);
+  color: rgb(var(--accent-deep));
+}
+
+/* Visible keyboard focus everywhere, without an ugly default box on click */
+:focus-visible {
+  outline: 2px solid rgb(var(--accent));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Custom scrollbar for horizontal category rails */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgb(var(--border));
+  border-radius: 999px;
+}
