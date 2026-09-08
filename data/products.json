@@ -222,5 +222,23 @@
     "reviews": 6,
     "inStock": true,
     "featured": false
-  }
+  },
+  {
+  "id": 15,
+  "name": "SMY-63A Wireless Headphones",
+  "slug": "smy-63a-wireless-headphones",
+  "price": 2200,
+  "oldPrice": 2800,
+  "category": "Gadgets",
+  "image": "/products/smy-63a-wireless-headphones.jpg",
+  "images": [
+    "/products/smy-63a-wireless-headphones.jpg"
+  ],
+  "description": "SMY-63A Wireless Headphones deliver clear sound, comfortable listening, and reliable wireless connectivity for music, gaming, and everyday use.",
+  "details": "Designed for everyday entertainment, the SMY-63A features a comfortable over-ear design, wireless Bluetooth connectivity, immersive audio, and a rechargeable battery for convenient long-lasting use.",
+  "rating": 4.5,
+  "reviews": 28,
+  "inStock": true,
+  "featured": true
+}
 ]
